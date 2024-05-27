@@ -1,0 +1,81 @@
+documentation
+
+registration api :
+    * body :{
+        "fistname":"",
+        "lastname":""
+        "role":"",
+        "password":""
+        "email":""
+    }
+    * response :{
+        data:
+        token:
+    }
+
+login api :
+    * body :{
+        "email":"",
+        "password":""
+    }
+    * response :{
+        data:
+        token:
+    }
+
+subscription api:
+    * body : {
+    "subscription":"nonpremium",
+    "price":"200",
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRGF0YSI6eyJlbWFpbCI6Im5pa2hpbEBnbWFpbC5jb20ifSwiaWF0IjoxNzE2Nzk0MTUxLCJleHAiOjE3MTY4MDEzNTF9.RdZqUwZKTlO8HRBMuZskrDw2vameBX9tbWmzrlzB4a0"
+        }
+    * response : {
+        "data": {
+            "_id": "665435c54916585325622617",
+            "subscription": "nonpremium",
+            "price": "200",
+            "__v": 0
+        },
+        "status": 0,
+        "error": "success"
+        }
+
+addmoviewsandvideos api:
+* body : {
+"moviename":"",
+"genre":"",
+"genre":"",
+"token":"",
+"packagetype":"subscription id",
+    }
+* response : {
+    "data": {
+    },
+    "status": 0,
+    "error": "success"
+    }
+
+    subscirbepackage api:
+    * body : {
+    "userid":"",
+    "packageid":"",
+    "token":"",
+        }
+    * response : {
+        "data": {
+        },
+        "status": 0,
+        "error": "success"
+        }
+
+        getmovies api:
+        * body : {
+        "userid":"",
+        "token":"",
+            }
+        * response : {
+            "data": {
+            },
+            "status": 0,
+            "error": "success"
+            }
